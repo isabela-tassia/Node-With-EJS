@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head'); %> <!-- Incluindo o arquivo head.ejs -->
+<body class="container">
+    <%- include('../partials/header', {pagina: 'Home'}); %> <!-- Incluindo o arquivo nav.ejs -->
+    <main>
+        <div class="jumbotron">
+            <h1>Node com EJS</h1>
+            <p>Vamos aprender A trabalhar com arquivos EJS</p>
+            <p><%= subtitle %></p>
+        </div>
+        <ul>
+            <% qualitys.forEach(function (quality) { %>
+                <li>
+                    <strong><%= quality.title %></strong><%= quality.message %>
+                </li>
+            <% }) %> <!-- Incluindo o arquivo qualitys.ejs -->
+                
+        </ul>
+    </main>
+    <%- include('../partials/footer'); %> <!-- Incluindo o arquivo footer.ejs -->
+</body>
+</html>
+
+<!-- para fazer alterações no arquivo ejs não precisa parar o server, mas pra fazer alterações no arquivo js precisa parar e depois rodar de novo-->
