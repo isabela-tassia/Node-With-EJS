@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["learning", "EJS"],
+  "author": "Isabela Lopes",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.9",
